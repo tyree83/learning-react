@@ -6,13 +6,29 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+  <style>
+    #container {
+      align-content: center;
+      padding: 50px;
+      background-color: powderblue;
+    }
+
+    #container h1 {
+      font-size: 144px;
+      font-family: sans-serif;
+      color: purple;
+    }
+  </style>
+
 </head>
 <body>
-  <script type="text/babel">
-    ReactDOM.render(
-      <h1>Sherlock Holmes</h1>,
-      document.body
-    );
-  </script>
+  <div id="container"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>🦄Detective-Unicorn🦄</h1>,
+        document.querySelector("#container")
+      );
+    </script>
 </body>
 </html>
