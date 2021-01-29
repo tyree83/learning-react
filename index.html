@@ -9,13 +9,14 @@
 
   <style>
     #container {
-      align-content: center;
-      padding: 50px;
+      padding: 25px;
       background-color: powderblue;
     }
 
     #container h1 {
-      font-size: 144px;
+      display: flex;
+      justify-content: center;
+      font-size: 100px;
       font-family: sans-serif;
       color: purple;
     }
@@ -25,9 +26,17 @@
 <body>
   <div id="container"></div>
     <script type="text/babel">
+
+      var destination = document.querySelector("#container")
+
       ReactDOM.render(
-        <h1>🦄Detective-Unicorn🦄</h1>,
-        document.querySelector("#container")
+      <div>
+        <h1>🦄<i>Detective-Unicorn</i>🦄</h1>
+        <h1>🦥<i>Detective-Sloth</i>🦥</h1>
+        <h1>🐘<i>Detective-Elephant</i>🐘</h1>
+        <h1>🦙<i>Detective-Llama</i>🦙</h1>
+      </div>,
+      destination
       );
     </script>
 </body>
