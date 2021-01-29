@@ -12,16 +12,22 @@
     <script type="text/babel">
   class HelloWorld extends React.Component {
     render() {
-      return <p>Hello, componentized world!!</p>
+      return <p>Hello,  {this.props.greetTarget}</p>
     }
 
   }
 
   ReactDOM.render(
-    <HelloWorld />,
+    <div>
+    <HelloWorld greetTarget="🦄Detective-Unicorn🦄" />
+    <HelloWorld greetTarget="🦥Detective-Sloth🦥"/>
+    <HelloWorld greetTarget="🐘Detective-Elephant🐘"/>
+    <HelloWorld greetTarget="🦙Detective-Llama🦙"/>
+    <HelloWorld greetTarget="🐼Detective-Panda🐼"/>
+    <HelloWorld greetTarget="🦍Detective-Granny Gorilla🦍"/>
+    </div>,
     document.querySelector("#container")
     );
-
     </script>
 </body>
 </html>
