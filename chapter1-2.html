@@ -15,7 +15,8 @@
 
     #container h1 {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
       font-size: 100px;
       font-family: sans-serif;
       color: purple;
@@ -31,10 +32,10 @@
 
       ReactDOM.render(
       <div>
-        <h1>🦄<i>Detective-Unicorn</i>🦄</h1>
-        <h1>🦥<i>Detective-Sloth</i>🦥</h1>
-        <h1>🐘<i>Detective-Elephant</i>🐘</h1>
-        <h1>🦙<i>Detective-Llama</i>🦙</h1>
+        <h1>🦄Detective-Unicorn🦄</h1><br/>
+        <h1>🦥Detective-Sloth🦥</h1><br/>
+        <h1>🐘Detective-Elephant🐘</h1><br/>
+        <h1>🦙Detective-Llama🦙</h1>
       </div>,
       destination
       );
